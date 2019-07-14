@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  <title>Building Digital Governance - {{ this.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <script src="https://kit.fontawesome.com/4e2f940d4d.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet"> 
+  <style>
+.lato{
+    font-family: 'Lato', sans-serif;
+}
+</style>
+
+<script>
+   function showMenu(){
+       var sideMenu = document.getElementById("sidemenu")
+       document.getElementById("overlay").style.opacity = .6
+       document.getElementById("sidecover").style.pointerEvents = "all"
+
+       sidemenu.style.transform=""
+   }
+
+   function hideMenu(){
+       var sideMenu = document.getElementById("sidemenu")
+       sidemenu.style.transform="translateX(100%)"
+       document.getElementById("overlay").style.opacity = .0
+       document.getElementById("sidecover").style.pointerEvents = "none"
+   }
+
+    function toggleSub(sub){
+       var oldVal = document.getElementById(sub).style.display
+       console.log(oldVal)
+       var newVal = oldVal != "table" ? "table" : "none"
+       document.getElementById(sub).style.display = newVal
+   }
+
+</script>
+</head>
+  <body class="bg-washed-blue">
+        <nav class="db dt-l w-100  border-box center pa3 ph5-l">
+                <a class="db dtc-l v-mid mid-gray link dim tl mb2 mb0-l" href="#" title="Home">
+                  <img src="/img/logo.png" class="dib h3" alt="Digital Public">
+                </a>
+                <a id="menuburger" class="pointer db dtc-l v-mid mid-gray z-99 link dim tr mb2 mb0-l" onclick="showMenu()" title="Menu">
+                        <i class="fas f2 fa-bars navy"></i>
+                </a>
+                
+              </nav>
+          
+        
+        <article class="pa3 pa5-ns mw7 center lato navy">
+                <a class="navy f4 fw4 dib pb3"> Digital governance primer > {{ this.title }}</a>
+
+                <h1 class="f3 f1-ns fw7">{{ this.title }}</h1>                
+               
+                <section class="f4 lh-copy">
+                    {{{ this.contents }}}
+                </section>
+
+
+
+              </article>
+              {{> menu }}
+
+      
+  </body>
+</html>
