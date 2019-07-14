@@ -2,7 +2,9 @@ language: node_js
 node_js:
   - "10"
 
-script: yarn deploy
+script:
+  - webpack --config webpack.config.js
+  - node build.js
 deploy:
   provider: pages
   local_dir: dist
