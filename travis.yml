@@ -1,9 +1,5 @@
 language: node_js
-node_js:
-  - "7"
-
 script: yarn deploy
-
 deploy:
   provider: pages
   local_dir: dist
