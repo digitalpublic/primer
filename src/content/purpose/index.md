@@ -1,5 +1,6 @@
 ---
-title: Purpose
+title: Governing with purpose
+section: Purpose
 layout: main.hbs
 ---
 

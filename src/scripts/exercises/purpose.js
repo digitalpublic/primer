@@ -82,7 +82,7 @@ const activityView = {
     view: (vnode)=>{
         return m("div",{class:"mv3 pv2"}, [
             m('p', {class:"f5 b mt0 navy"}, `Activity ${vnode.attrs.objindex+1}.${vnode.attrs.index+1}`, m("i", {class:"far ml5 fa-trash-alt pointer hover-red", onclick: ()=>{Model.removeActivity(vnode.attrs.objid, vnode.attrs.id)}}) ),
-            m("input", {class:"input-reset ba bw1 bg-white w-100 br2 b--navy f6 pa2 lato navy", oninput: (e)=>{Model.updateActivity(vnode.attrs.objid, vnode.attrs.id, e.target.value)}}, vnode.attrs.content)
+            m("input", {class:"input-reset border-box ba bw1 bg-white w-100 br2 b--navy f6 pa2 lato navy", oninput: (e)=>{Model.updateActivity(vnode.attrs.objid, vnode.attrs.id, e.target.value)}}, vnode.attrs.content)
         ])
     }
 }
