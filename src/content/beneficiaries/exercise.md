@@ -1,5 +1,6 @@
 ---
-title: Assets
+title: Who benefits from your project?
 layout: exercise.hbs
+exercise: beneficiaries
 ---
-This exercise will prompt users to identify beneficiaries and stakeholders who may benefit from the project.
+List your project's beneficiaries, and order them.

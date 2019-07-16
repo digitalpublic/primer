@@ -9,9 +9,7 @@ const uuidv4 = require('uuid/v4');
 const Model = {
     purpose: "",
     objectives: {},
-    init:()=>{
-       
-    },
+
     updatePurpose: (data)=>{
         Model.purpose = data
         localforage.setItem("purpose", data).then(function (value) {
@@ -22,7 +20,6 @@ const Model = {
     addObjective: ()=>{
         const content = "";
         const uid = uuidv4()
-        const newObj = Model.objectives
         Model.objectives[uid] = {content: content, activities: {}}
         localforage.setItem("objectives", Model.objectives)
 
@@ -31,7 +28,7 @@ const Model = {
         Model.objectives[id].content = content
         localforage.setItem("objectives", Model.objectives)
     },
-    removeObjective: (id, content)=>{
+    removeObjective: (id)=>{
         delete Model.objectives[id]
         localforage.setItem("objectives", Model.objectives)
     },
@@ -53,13 +50,17 @@ const Model = {
 }
 
 
+/*
+alternate style
+"background-color: rgba(205, 236, 255, 0.5), resize: none"
 
+*/
 
 const purposeView = {
     view: ()=>{
         return m("div", {class:"mb3 mt2"}, [
             m("p",{class:"f3 b navy"}, "Our project's purpose is..."),
-            m("textarea", {class:"input-reset ba bw1 bg-white w-100 br2 b--navy f4 pa2 lato navy", placeholder:"Write your purpose here", oninput: (e)=>{Model.updatePurpose(e.target.value)}, value:Model.purpose})
+            m("textarea", {class:"input-reset bn w-100 br2 f4 pa2 lato navy", style:"background-color: rgba(205, 236, 255, 0.5); resize: none", placeholder:"Write your purpose here", oninput: (e)=>{Model.updatePurpose(e.target.value)}, value:Model.purpose})
         ])
     }
 }
@@ -67,8 +68,8 @@ const purposeView = {
 const objectiveView = {
     view: (vnode)=>{
         return m("div", {class:"mv4 pv3"}, [
-            m('p', {class:"f4 b mt0 navy"}, `Objective ${vnode.attrs.index+1}`, m("i", {class:"far ml5 fa-trash-alt pointer hover-red", onclick: ()=>{Model.removeObjective(vnode.attrs.id)}}) ),
-            m("textarea", {class:"input-reset ba bw1 bg-white w-100 br2 b--navy f5 pa2 lato navy", placeholder:"Objective", oninput: (e)=>{Model.updateObjective(vnode.attrs.id, e.target.value)}}, vnode.attrs.objective.content),
+            m('p', {class:"f4 b mt0 navy"}, `Objective ${vnode.attrs.index+1}`, m("i", {class:"fas ml3 f5 fa-trash pointer hover-red", onclick: ()=>{Model.removeObjective(vnode.attrs.id)}}) ),
+            m("textarea", {class:"input-reset w-100 bn br2 f5 pa2 lato navy", style:"background-color: rgba(205, 236, 255, 0.5); resize: none", placeholder:"Objective", oninput: (e)=>{Model.updateObjective(vnode.attrs.id, e.target.value)}}, vnode.attrs.objective.content),
             keys(vnode.attrs.objective.activities).map(function(activity, index){
                 return m(activityView, {id: activity, content: vnode.attrs.objective.activities[activity], objid: vnode.attrs.id, objindex: vnode.attrs.index, index:index})
             }),
@@ -81,14 +82,13 @@ const objectiveView = {
 const activityView = {
     view: (vnode)=>{
         return m("div",{class:"mv3 pv2"}, [
-            m('p', {class:"f5 b mt0 navy"}, `Activity ${vnode.attrs.objindex+1}.${vnode.attrs.index+1}`, m("i", {class:"far ml5 fa-trash-alt pointer hover-red", onclick: ()=>{Model.removeActivity(vnode.attrs.objid, vnode.attrs.id)}}) ),
-            m("input", {class:"input-reset border-box ba bw1 bg-white w-100 br2 b--navy f6 pa2 lato navy", oninput: (e)=>{Model.updateActivity(vnode.attrs.objid, vnode.attrs.id, e.target.value)}, value: vnode.attrs.content},)
+            m('p', {class:"f5 b mt0 navy"}, `Activity ${vnode.attrs.objindex+1}.${vnode.attrs.index+1}`, m("i", {class:"fas ml3 fa-trash f6 pointer hover-red", onclick: ()=>{Model.removeActivity(vnode.attrs.objid, vnode.attrs.id)}}) ),
+            m("input", {class:"input-reset border-box bn w-100 br2 f6 pa2 lato navy", style:"background-color: rgba(205, 236, 255, 0.5); resize: none", oninput: (e)=>{Model.updateActivity(vnode.attrs.objid, vnode.attrs.id, e.target.value)}, value: vnode.attrs.content},)
         ])
     }
 }
 
 const MainView = {
-    oninit: Model.init,
     view: ()=>{
         return m("div", [
             m(purposeView),

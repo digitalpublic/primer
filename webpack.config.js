@@ -4,7 +4,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 module.exports = {
   entry: {
    // assets: './src/exercises/assets.js',
-  //  beneficiaries: './src/exercises/beneficiaries.js',
+    beneficiaries: './src/scripts/exercises/beneficiaries.js',
   //  management: "./src/exercises/management.js",
     purpose: "./src/scripts/exercises/purpose.js",
   //  risks: "./src/exercises/risks.js",
