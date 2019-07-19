@@ -1,5 +1,5 @@
 ---
-title: Purpose - DMF
+title: Test your maturity
 layout: maturity.hbs
 ---
 
