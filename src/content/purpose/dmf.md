@@ -1,5 +1,5 @@
 ---
-title: Test your maturity
+title: Test your maturity - purpose
 layout: maturity.hbs
 ---
 

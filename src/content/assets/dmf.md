@@ -1,5 +1,5 @@
 ---
-title: Test your maturity
+title: Test your maturity - Assets
 layout: maturity.hbs
 ---
 ## Level 1
