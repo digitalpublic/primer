@@ -2,7 +2,6 @@
 title: Test your maturity
 layout: maturity.hbs
 ---
-
 ## Level 1
 * We have no written inventory of our project's assets. 
 
