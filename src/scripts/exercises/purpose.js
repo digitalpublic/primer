@@ -22,8 +22,8 @@ const Model = {
         const uid = uuidv4()
         Model.objectives[uid] = {content: content, activities: {}}
         localforage.setItem("objectives", Model.objectives)
-
     },
+
     updateObjective: (id, content)=>{
         Model.objectives[id].content = content
         localforage.setItem("objectives", Model.objectives)

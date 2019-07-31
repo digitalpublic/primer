@@ -1,14 +1,10 @@
 import m from "mithril"
 import localforage from "../common/storage"
-import keys from "ramda/src/keys"
-import length from "ramda/src/length"
 import Sortable from "sortablejs"
 import move from "ramda/src/move"
 import remove from "ramda/src/remove"
 import lensPath from "ramda/src/lensPath"
 import set from "ramda/src/set"
-import view from "ramda/src/view"
-import over from "ramda/src/over"
 
 const uuidv4 = require('uuid/v4');
 
@@ -22,6 +18,7 @@ const Model = {
         Model.beneficiaries.push({content: content, id: uid})
         localforage.setItem("beneficiaries", Model.beneficiaries)
     },
+    
     updateBeneficiary: (index, content)=>{
         Model.beneficiaries[index].content = content
         localforage.setItem("beneficiaries", Model.beneficiaries)
