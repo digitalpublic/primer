@@ -12,9 +12,7 @@ const Model = {
     activities: [],
     assets: {},
 
-    init: (data)=>{
-
-    },
+  
 
     updateAsset: (path, value)=>{
         const aLens = lensPath(path)

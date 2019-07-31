@@ -1,11 +1,10 @@
 ---
-title: Risk
+title: Build a risk register
 layout: exercise.hbs
+exercise: risks
 ---
 
-*This exercise will prompt users to build a risk register. Below is a prose description of the exercise, which will be converted to an interactive soon.* 
-
-List risks to    
+Now, list risks to    
 * the project;
 * the beneficiaries (primary, not secondary stakeholders);
 * the project's assets.

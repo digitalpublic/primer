@@ -7,7 +7,7 @@ module.exports = {
     beneficiaries: './src/scripts/exercises/beneficiaries.js',
   //  management: "./src/exercises/management.js",
     purpose: "./src/scripts/exercises/purpose.js",
-  //  risks: "./src/exercises/risks.js",
+    risks: "./src/scripts/exercises/risks.js",
   //  permissions: "./src/exercises/permissions.js"
 
   },
