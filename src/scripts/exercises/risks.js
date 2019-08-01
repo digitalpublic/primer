@@ -65,8 +65,6 @@ const riskView = {
                   [ Object.entries(Model.stakeholders).map(function(stakeholder){
                         const id = stakeholder[0]
                         const name = stakeholder[1]
-                        console.log(id)
-                        console.log(name.content)
                         return m("option", {value: id}, name.content)
                     })]
                 
@@ -76,16 +74,17 @@ const riskView = {
 
             m("div", {class:"pv2 mv2 flex w-100"}, [
                 m("div",[
-                    m("label", {class:"mr2 f4 b v-mid pa2"}, "Likelihood"),
-                    m("select", {class:"input-reset border-box bn mw10 br2 f4 pa2 mr3 lato navy", style:"background-color: rgba(205, 236, 255, 0.5); resize: none", onchange: (e)=>{Model.updateRisk([vnode.attrs.index, "likelihood"], e.target.value)}, value: vnode.attrs.risk.likelihood}, [m("option", {value:1}, "1 (low)"), m("option", {value:2}, "2"), m("option", {value:3}, "3"), m("option", {value:4}, "4"), m("option", {value:5}, "5 (high)")])
+                    m("label", {class:"mr2 f4 b pa2"}, "Likelihood"),
+                    m("select", {class:"input-reset border-box bn mw10 br2 f4 pa2 mr3 lato navy", style:`background-color: ${colorByRating(vnode.attrs.risk.likelihood)}; resize: none`, onchange: (e)=>{Model.updateRisk([vnode.attrs.index, "likelihood"], e.target.value)}, value: vnode.attrs.risk.likelihood}, [m("option", {value:1}, "1 (low)"), m("option", {value:2}, "2"), m("option", {value:3}, "3"), m("option", {value:4}, "4"), m("option", {value:5}, "5 (high)")])
                 ]),
                 m("div",[
-                    m("label", {class: "mr2 f4 b v-mid pa2"}, "Severity"),
-                    m("select", {class:"input-reset border-box bn mw10 br2 f4 pa2 mr2 lato navy", style:"background-color: rgba(205, 236, 255, 0.5); resize: none", onchange: (e)=>{Model.updateRisk([vnode.attrs.index, "severity"], e.target.value)}, value: vnode.attrs.risk.severity}, [m("option", {value:1}, "1 (low)"), m("option", {value:2}, "2"), m("option", {value:3}, "3"), m("option", {value:4}, "4"), m("option", {value:5}, "5 (high)")]),
+                    m("label", {class: "mr2 f4 b pa2"}, "Severity"),
+                    m("select", {class:"input-reset border-box bn mw10 br2 f4 pa2 mr2 lato navy", style:`background-color: ${colorByRating(vnode.attrs.risk.severity)}; resize: none`, onchange: (e)=>{Model.updateRisk([vnode.attrs.index, "severity"], e.target.value)}, value: vnode.attrs.risk.severity}, [m("option", {value:1}, "1 (low)"), m("option", {value:2}, "2"), m("option", {value:3}, "3"), m("option", {value:4}, "4"), m("option", {value:5}, "5 (high)")]),
     
                 ])
-               
             ]),
+           
+            m("button", {class:"button-reset pointer bg-washed-red dark-red dim bn br2 lato b f5 pa2", onclick:()=>{Model.removeRisk(vnode.attrs.index)}}, "Delete Risk"),
            
 
          //   m(mitigationListView)
@@ -102,6 +101,19 @@ const MainView = {
             m(riskListView, {risks: Model.risks})
         ])
     }
+}
+
+const colorByRating = (rating)=>{
+    const output = ["rgba(205, 236, 255, 0.5)",
+        "#9eebcf",
+        "#CCEEBC",
+        "#fbf1a9",
+        "#FDB182",
+        "#ff725c",
+    ]
+
+    const normalized = rating != null ? rating : 0
+    return output[normalized] 
 }
 
 
