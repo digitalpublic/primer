@@ -2,6 +2,10 @@
 title: Identify your assets
 layout: exercise.hbs
 exercise: assets
+prev: Digital assets
+prevLink: /assets/index.html
+next: Test your maturity
+nextLink: /assets/dmf.html
 ---
 
 Inventory your project's assets. 

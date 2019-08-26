@@ -1,6 +1,10 @@
 ---
 title: Test your maturity - beneficiaries
 layout: maturity.hbs
+prev: Who benefits from your project?
+prevLink: /beneficiaries/exercise.html
+next: Digital assets
+nextLink: /assets/index.html
 ---
 ## Level 1
 * Our project has specific beneficiaries.

@@ -2,6 +2,10 @@
 title: Who benefits from your project?
 layout: exercise.hbs
 exercise: beneficiaries
+prev: Beneficiaries and stakeholders
+prevLink: /beneficiaries/index.html
+next: Test your maturity
+nextLink: /beneficiaries/dmf.html
 ---
 Your project exists for a reason, but it also exists to benefit someone. List your project's beneficiaries: people, organizations, or classes your project's activities are intended to benefit. Beneficiaries could (but do not have to) include the public, specific patients, and project members. You can list classes of beneficiaries. Rank beneficiaries in order of importance--in other words, if there is a conflict of interest between two beneficiaries, whose interests should be prioritized. Try to avoid ties, but you may include them if you must.
 

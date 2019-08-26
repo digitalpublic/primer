@@ -2,6 +2,10 @@
 title: Permissions
 layout: main.hbs
 exercise: permissions
+prev: Test your maturity
+prevLink: /assets/dmf.html
+next: Build a permissions table
+nextLink: /permissions/exercise.html
 ---
 
 Much of your data project's day-to-day operation comes down to permissions: who can do what, when, and how.

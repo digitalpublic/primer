@@ -1,6 +1,10 @@
 ---
 title: Beneficiaries
 layout: main.hbs
+prev: Test your maturity
+prevLink: /purpose/dmf.html
+next: Who benefits from your project?
+nextLink: /beneficiaries/exercise.html
 ---
 
 Your project exists to help someone&mdash;a group of people, your members, residents of a neighborhood or city, patients, the public&mdash;improve their lives. 

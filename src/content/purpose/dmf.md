@@ -1,6 +1,10 @@
 ---
 title: Test your maturity - purpose
 layout: maturity.hbs
+prev: Purpose, objectives, activities
+prevLink: /purpose/exercise.html
+next: Beneficiaries and stakeholders
+nextLink: /beneficiaries/index.html
 ---
 
 ## Level 1

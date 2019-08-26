@@ -1,6 +1,10 @@
 ---
 title: Assets
 layout: main.hbs
+prev: Test your maturity
+prevLink: /beneficiaries/dmf.html
+next: Identify your assets
+nextLink: /assets/exercise.html
 ---
 
 Assets are things that make your project go.

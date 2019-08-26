@@ -1,6 +1,10 @@
 ---
 title: Test your maturity - Assets
 layout: maturity.hbs
+prev: Identify your assets
+prevLink: /assets/exercise.html
+next: What are permissions?
+nextLink: /permissions/index.html
 ---
 ## Level 1
 * We have no written inventory of our project's assets. 

@@ -2,6 +2,10 @@
 title: Governing with purpose
 section: Purpose
 layout: main.hbs
+prev: Introduction
+prevLink: /introduction.html
+next: Purpose, objectives, activities
+nextLink: /purpose/exercise.html
 ---
 
 Let's start at the beginning, with a simple question: what is the purpose of your data project?

@@ -1,6 +1,10 @@
 ---
 title: Management
 layout: exercise.hbs
+prev: What are managers for?
+prevLink: /management/index.html
+next: Test your maturity
+nextLink: /management/dmf.html
 ---
 *This exercise will prompt users to identify responsible decision-makers for their project. A prose description of the exercise follows. It will be converted to an interactive soon.*
 

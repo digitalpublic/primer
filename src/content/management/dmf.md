@@ -1,6 +1,10 @@
 ---
 title: Test your maturity - management
 layout: maturity.hbs
+prev: Assign responsibilities
+prevLink: /management/exercise.html
+next: Risk and threat modeling
+nextLink: /risks/index.html
 ---
 
 ## Level 1

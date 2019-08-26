@@ -1,7 +1,11 @@
 ---
-title: Permissions
+title: Who can do what?
 layout: exercise.hbs
 exercise: permissions
+prev: What are permissions?
+prevLink: /permissions/index.html
+next: Test your maturity
+nextLink: /permissions/dmf.html
 ---
 
 *This exercise will see users build a permissions table. A prose description of the exercise follows. It will be converted into an interactive soon.*

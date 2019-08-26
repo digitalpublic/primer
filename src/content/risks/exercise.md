@@ -2,6 +2,10 @@
 title: Build a risk register
 layout: exercise.hbs
 exercise: risks
+prev: Risk and threat modeling
+prevLink: /risks/index.html
+next: Test your maturity
+nextLink: /risks/dmf.html
 ---
 
 Now, list risks to    

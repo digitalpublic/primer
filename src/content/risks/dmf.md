@@ -1,6 +1,10 @@
 ---
 title: Test your maturity - risks
 layout: maturity.hbs
+prev: Build a risk register
+prevLink: /risks/exercise.html
+next: Wrapping up
+nextLink: /wrapup.html
 ---
 
 ## Level 1

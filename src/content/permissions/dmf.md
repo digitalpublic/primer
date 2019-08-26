@@ -1,6 +1,10 @@
 ---
 title: Test your maturity - permissions
 layout: maturity.hbs
+prev: Build a permissions table
+prevLink: /permissions/exercise.html
+next: What are managers for?
+nextLink: /management/index.html
 ---
 
 ## Level 1
