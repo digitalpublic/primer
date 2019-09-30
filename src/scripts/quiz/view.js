@@ -22,7 +22,7 @@ const Model = {
             imported["checked"] = question.checked || false;
             Model.questions.push(imported)
         })
-        localForage.setItem(Model.category, Model.questions)
+        localforage.setItem(Model.category, Model.questions)
     },
     change: (category, id, result)=>{
         const aLens = lensPath([id-1, "checked"])
