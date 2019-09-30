@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+  <title>Building Digital Governance - Data governance maturity test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://unpkg.com/tachyons/css/tachyons.min.css">
+  <script src="https://kit.fontawesome.com/4e2f940d4d.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet"> 
+  <style>
+.lato{
+    font-family: 'Lato', sans-serif;
+}
+</style>
+
+<script>
+   function showMenu(){
+       var sideMenu = document.getElementById("sidemenu")
+       document.getElementById("overlay").style.opacity = .6
+       document.getElementById("sidecover").style.pointerEvents = "all"
+
+       sidemenu.style.transform=""
+   }
+
+   function hideMenu(){
+       var sideMenu = document.getElementById("sidemenu")
+       sidemenu.style.transform="translateX(100%)"
+       document.getElementById("overlay").style.opacity = .0
+       document.getElementById("sidecover").style.pointerEvents = "none"
+   }
+
+    function toggleSub(sub){
+       var oldVal = document.getElementById(sub).style.display
+       console.log(oldVal)
+       var newVal = oldVal != "table" ? "table" : "none"
+       document.getElementById(sub).style.display = newVal
+   }
+
+</script>
+</head>
+  <body class="bg-washed-blue">
+        <nav class="dt w-100  border-box center pa3 ph5-l">
+                <a class="dtc v-mid mid-gray link dim tl mb2 mb0-l" href="#" title="Home">
+                  <img src="/img/logo.png" class="dib h3" alt="Digital Public">
+                </a>
+                <a id="menuburger" class="pointer dtc v-mid mid-gray z-99 link dim tr mb2 mb0-l" onclick="showMenu()" title="Menu">
+                        <i class="fas f2 fa-bars navy"></i>
+                </a>
+                
+              </nav>
+          
+        
+        <article class="pa3 pa5-ns mw7 center lato navy">
+                <a class="navy f4 fw4 dib pb3"> Digital governance primer > Data governance maturity test</a>
+
+                <h1 class="f3 f1-ns fw7">Data governance maturity test</h1>                
+               
+                <section class="f4 lh-copy">
+                    <p>Welcome to the digital governance maturity test, a tool to help your organization or project to better protect, manage, and gain opportunity from data.</p>
+<p>To start, you should congratulate yourself. Just by engaging in this process you deserve some kudos. The project of data governance is of paramount importance. As digital tools play increasingly vital roles in shaping our societies, facilitating our exchanges of ideas, allocating our rights and resources, and fueling our economies, thoughtful approaches to digital governance are more critical than ever. As such, those who hold data have responsibilities to consider carefully the structures that govern its use. .</p>
+<p>There is much to gain through thoughtful data governance. After all, data is potential. Access to quality data can support a range of business opportunities, and control of data can bring about new knowledge and insights. At the same time, data can be under-utilized, can cause inefficiencies or expense, or can even cause various harms, especially when control is lost through leak or hack. In this way, data governance is about capturing opportunity and mitigating risks.</p>
+<p>As you start to work your way through this test, there are a few key concepts you should keep in mind.</p>
+<ul>
+<li>
+<p>First, good data governance is hard work. This test serves to provide some direction and enhance preparedness, but it cannot suffice alone. Thoughtful data governance will necessarily entail detailed information gathering, reflection on organizational capacities, considerations of various relationships, the weighing of various risks, long-term commitment, ongoing funding, and even potential culture changes, among other arduous tasks. Data governance is not a simple project; it is an essential one.</p>
+</li>
+<li>
+<p>Second, data governance is neither one-size-fits-all nor a matter of finding the one perfect solution. Rather, each organization, project, or community engaging in data governance analysis will have different objectives and different characteristics that require different solutions, and each will find various data governance paths to choose.</p>
+</li>
+<li>
+<p>Third, data governance—even at its most thoughtful and careful—is no silver bullet. The kinds of choices offered in this primer cannot prevent data breaches or magically realize an organization’s fullest potential. They can, though, help you organize your project’s goals and risks, achieve deeper trust with your constituents, and build thoughtful, sustainable governance.</p>
+</li>
+</ul>
+<p><strong>PS:</strong> The exercises here will save your data in your browser. This means that we don’t see any of it, but you can revisit the exercises later and pick up where you left off. Be warned: clearing your browser cache will delete this saved data.</p>
+
+                </section>
+
+               <section class="f4 mt3 lh-copy">
+              
+              
+                                  <a href="/quiz/purpose.html" class="link mt4 db tr navy hover-blue"><span class="b">Next: </span>Start the test!</a>
+              
+              
+                                
+              </section>
+              </article>
+               <div id="sidecover" class="fixed w-100 h-100 z-4 overflow-x-hidden top-0 left-0 overflow-y-scroll" style="pointer-events: none">
+                                  <div id="sidemenu" class="right-0 h-100 absolute z-4 bg-white border-box overflow-y-scroll bg-washed-blue" style="transform: translateX(100%); transition:transform .35s; "> 
+                                       
+                                      <a class="w-100 pointer right-0 absolute pa3 ph5-l v-mid mid-gray link tr mb2 mb0-l" onclick="hideMenu()" title="Home">
+                                                  <i class="far f2-ns f3 hover-red fa-times-circle navy"></i>
+                                          </a>
+              
+                                          <div class="center pt5-ns pt4 ph5-ns ph4">
+                                              
+                                                  <div class="dt mw6 pv4-ns pv3 lato ">
+                                                      <div class="pv0">
+                                                          
+                                                            <p class=" fw7 mv3 navy f2-ns f3">
+                                                             <a class="link navy hover-blue" href="/introduction.html">Introduction</a>
+                                                            </p>
+                                                      </div>
+                                                  <div class="db w-100 fw7 ttu gray f6">How to use this guide</div>
+                                                  </div>
+                                          </div>
+              
+                                          <div class="center ph5-ns ph4">
+                                              
+                                                  <div class="dt mw6 pv4-ns pv3 lato pointer">
+                                                          <div class="pv0" onclick="toggleSub('purpose-sub')">
+                                                          <div class="dtc v-mid w2 tc">
+                                                                  <i class="fas navy f2-ns f3 fa-bullseye"></i>
+                                                          </div>
+                                                          <div class="dtc v-mid pl3">
+                                                            <p class=" fw7 mv3 navy f2-ns f3">
+                                                             Purpose
+                                                            </p>
+                                                          </div>
+                                                      </div>
+                                                  <div class="db w-100 fw7 ttu gray f6">What are you trying to do?</div>
+              
+                                                  <div id="purpose-sub" class="dn mw6 pv2 lato navy">
+                                                          <div class="pv0">
+                                                                <p class=" fw7 mv3 f4">
+                                                                      <a class="link navy hover-blue" href="/purpose/index.html">Governing with purpose</a>
+                                                                </p>
+                                                                <p class=" fw7 mv3 f4">
+                                                                      <a class="link navy hover-blue" href="/purpose/exercise.html">Purpose, objectives, activities</a>
+                                                                </p>
+                                                                <p class=" fw7 mv3 f4">
+                                                                      <a class="link navy hover-blue" href="/purpose/dmf.html">Test your maturity</a>
+                                                                </p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+              
+                                                  
+                                          </div>
+              
+                                          <div class="center ph5-ns ph4">
+                                              
+                                                  <div class="dt mw6 pv4-ns pv3 lato pointer">
+                                                          <div class="pv0" onclick="toggleSub('beneficiaries-sub')">
+                                                          <div class="dtc v-mid w2 tc">
+                                                                  <i class="fas navy f2-ns f3 fa-users"></i>
+                                                          </div>
+                                                          <div class="dtc v-mid pl3">
+                                                            <p class=" fw7 mv3 navy f2-ns f3">
+                                                             Beneficiaries
+                                                            </p>
+                                                          </div>
+                                                      </div>
+                                                  <div class="db w-100 fw7 ttu gray f6">Who does your project support?</div>
+                                                  <div id="beneficiaries-sub" class="dn mw6 pv2 lato navy">
+                                                          <div class="pv0">
+                                                                <p class=" fw7 mv3 f4">
+                                                                      <a class="link navy hover-blue" href="/beneficiaries/index.html">Beneficiaries and stakeholders</a>
+                                                                </p>
+                                                                <p class=" fw7 mv3 f4">
+                                                                      <a class="link navy hover-blue" href="/beneficiaries/exercise.html">Who benefits from your project?</a>
+                                                                </p>
+                                                                <p class=" fw7 mv3 f4">
+                                                                       <a class="link navy hover-blue" href="/beneficiaries/dmf.html">Test your maturity</a>
+                                                                </p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                          </div>
+              
+              
+                                          <div class="center ph5-ns ph4">
+                                              
+                                                  <div class="dt mw6 pv4-ns pv3 lato pointer">
+                                                          <div class="pv0" onclick="toggleSub('assets-sub')">
+                                                          <div class="dtc v-mid w2 tc">
+                                                                  <i class="far navy f2-ns f3 fa-gem"></i>
+                                                          </div>
+                                                          <div class="dtc v-mid pl3">
+                                                            <p class=" fw7 mv3 navy f2-ns f3">
+                                                             Assets
+                                                            </p>
+                                                          </div>
+                                                      </div>
+                                                  <div class="db w-100 fw7 ttu gray f6">What do you have?</div>
+                                                 
+              
+                                                  <div id="assets-sub" class="dn mw6 pv2 lato navy">
+                                                          <div class="pv0">
+                                                                <p class=" fw7 mv3 f4">
+                                                                      <a class="link navy hover-blue" href="/assets/index.html">Digital assets</a>
+                                                                </p>
+                                                                <p class=" fw7 mv3 f4">
+                                                                      <a class="link navy hover-blue" href="/assets/exercise.html">Identify your assets</a>
+                                                                </p>
+                                                                <p class=" fw7 mv3 f4">
+                                                                      <a class="link navy hover-blue" href="/assets/maturity.html">Test your maturity</a>
+                                                                </p>
+                                                          </div>
+                                                      </div>
+                                                  </div>  
+                                          </div>
+              
+                                          <div class="center ph5-ns ph4">
+                                              
+                                                  <div class="dt mw6 pv4-ns pv3 lato pointer">
+                                                      <div class="pv0" onclick="toggleSub('permissions-sub')">
+                                                          <div class="dtc v-mid w2 tc">
+                                                                  <i class="fas navy f2-ns f3 fa-tasks"></i>
+                                                          </div>
+                                                          <div class="dtc v-mid pl3">
+                                                            <p class=" fw7 mv3 navy f2-ns f3">
+                                                             Permissions
+                                                            </p>
+                                                          </div>
+                                                      </div>
+                                                  <div class="db w-100 fw7 ttu gray f6">Who can do what?</div>
+              
+                                                  <div id="permissions-sub" class="dn mw6 pv2 lato navy">
+                                                          <div class="pv0">
+                                                                <p class=" fw7 mv3 f4">
+                                                                      <a class="link navy hover-blue" href="/permissions/index.html">What are permissions?</a>
+                                                                </p>
+                                                                <p class=" fw7 mv3 f4">
+                                                                      <a class="link navy hover-blue" href="/permissions/exercise.html">Build a permissions table</a>
+                                                                </p>
+                                                                <p class=" fw7 mv3 f4">
+                                                                      <a class="link navy hover-blue" href="/permissions/dmf.html">Test your maturity</a>
+                                                                </p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+              
+                          
+              
+                                          </div>
+              
+                                          <div class="center ph5-ns ph4">
+                                              
+                                                  <div class="dt mw6 pv4-ns pv3 lato pointer">
+                                                          <div class="pv0" onclick="toggleSub('management-sub')">
+                                                          <div class="dtc v-mid w2 tc">
+                                                                  <i class="fas navy f2-ns f3 fa-suitcase"></i>
+                                                          </div>
+                                                          <div class="dtc v-mid pl3">
+                                                            <p class=" fw7 mv3 navy f2-ns f3">
+                                                             Management
+                                                            </p>
+                                                          </div>
+                                                      </div>
+                                                  <div class="db w-100 fw7 ttu gray f6">Who is responsible?</div>
+                                                 
+              
+                                                  <div id="management-sub" class="dn mw6 pv2 lato navy">
+                                                          <div class="pv0">
+                                                                <p class=" fw7 mv3 f4">
+                                                                      <a class="link navy hover-blue" href="/management/index.html">What are managers for?</a>
+                                                                </p>
+                                                                <p class=" fw7 mv3 f4">
+                                                                      <a class="link navy hover-blue" href="/management/exercise.html">Assign responsibilities</a>
+                                                                </p>
+                                                                <p class=" fw7 mv3 f4">
+                                                                      <a class="link navy hover-blue" href="/management/dmf.html">Test your maturity</a>
+                                                                </p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                          </div>
+              
+                                          <div class="center ph5-ns ph4">
+                                              
+                                                  <div class="dt mw6 pv4-ns pv3 lato pointer">
+                                                          <div class="pv0" onclick="toggleSub('risks-sub')">
+                                                          <div class="dtc v-mid w2 tc">
+                                                                  <i class="fas navy f2-ns f3 fa-exclamation-triangle"></i>
+                                                          </div>
+                                                          <div class="dtc v-mid pl3">
+                                                            <p class=" fw7 mv3 navy f2-ns f3">
+                                                             Risks
+                                                            </p>
+                                                          </div>
+                                                      </div>
+                                                  <div class="db w-100 fw7 ttu gray f6">What threats are out there?</div>
+              
+                                                  <div id="risks-sub" class="dn mw6 pv2 lato navy">
+                                                          <div class="pv0">
+                                                                <p class=" fw7 mv3 f4">
+                                                                       <a class="link navy hover-blue" href="/risks/index.html">Risk and threat modeling</a>
+                                                                </p>
+                                                                <p class=" fw7 mv3 f4">
+                                                                      <a class="link navy hover-blue" href="/risks/exercise.html">Build a risk register</a>
+                                                                </p>
+                                                                <p class=" fw7 mv3 f4">
+                                                                      <a class="link navy hover-blue" href="/risks/dmf.html">Test your maturity</a>
+                                                                </p>
+                                                          </div>
+                                                      </div>
+                                                  </div>
+                                          </div>
+              
+                                          <div class="center ph5-ns ph4">
+                                              
+                                                  <div class="dt mw6 pv4-ns pv3 lato ">
+                                                      <div class="pv0">
+                                                          
+                                                            <p class=" fw7 mv3 navy f2-ns f3">
+                                                             <a class="link navy hover-blue" href="/wrapup.html">Wrapping up</a>
+                                                            </p>
+                                                      </div>
+                                                  <div class="db w-100 fw7 ttu gray f6">What to do next</div>
+                                                  </div>
+                                          </div>
+                                  </div>
+                              <div class="bg-black w-100 h-100 border-box" style="opacity: 0; transition: opacity .35s" onclick="hideMenu()" id="overlay"></div>
+                             
+                          </div>
+      
+  </body>
+</html>
