@@ -8,11 +8,11 @@ import set from "ramda/src/set"
 const uuidv4 = require('uuid/v4');
 
 const Model = {
-    objectives: [],
     activities: [],
-    assets: {},
+    assets: [],
+    management: {},
+    stakeholders: {},
 
-  
 
     updateAsset: (path, value)=>{
         const aLens = lensPath(path)
@@ -21,8 +21,8 @@ const Model = {
         localforage.setItem("assets", newAssets)
     },
 
-    addAsset: (id)=>{
-        const content = {assetName: "",  id:uuidv4(), status:"needs"};
+    addManagement: (id, type)=>{
+        const content = {stakeholderId: "",  id:uuidv4(), type:type};
         if(Model.assets[id] === undefined) {
             Model.assets[id] = [content]
         } else {

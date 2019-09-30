@@ -1,5 +1,4 @@
 const path = require('path');
-var ExtractTextPlugin = require('extract-text-webpack-plugin');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
 module.exports = {
   entry: {
@@ -8,6 +7,13 @@ module.exports = {
   //  management: "./src/exercises/management.js",
     purpose: "./src/scripts/exercises/purpose.js",
     risks: "./src/scripts/exercises/risks.js",
+    assetsQuiz: "./src/scripts/quiz/sections/assets.js",
+    beneficiariesQuiz: "./src/scripts/quiz/sections/beneficiaries.js",
+    managementQuiz: "./src/scripts/quiz/sections/management.js",
+    permissionsQuiz: "./src/scripts/quiz/sections/permissions.js",
+    purposeQuiz: "./src/scripts/quiz/sections/purpose.js",
+    risksQuiz: "./src/scripts/quiz/sections/risks.js",
+    results: "./src/scripts/quiz/results.js"
   //  permissions: "./src/exercises/permissions.js"
 
   },
