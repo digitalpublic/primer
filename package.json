@@ -14,7 +14,7 @@
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.3",
     "babel-preset-env": "^1.6.1",
-    "chart.js": "^2.8.0",
+    "chart.js": "^2.9.4",
     "extract-text-webpack-plugin": "^3.0.2",
     "handlebars": "^4.1.2",
     "jstransformer-handlebars": "^1.1.0",
